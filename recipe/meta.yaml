@@ -1,5 +1,5 @@
 {% set name = "jfrog-cli" %}
-{% set version = "2.78.1" %}
+{% set version = "2.78.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jfrog/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 382fa2b6047c173fe30cd86b95cb6d24e2795afc0de87d8600a1e74d065cda11
+  sha256: 3bcf8760438848d56087f8e0ff2142419dcb4900986a668e678a0a916d62f9be
 
 build:
   number: 0
