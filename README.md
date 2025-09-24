@@ -11,6 +11,8 @@ Summary: JFrog CLI is a client that provides a simple interface that automates a
 
 Development: https://github.com/jfrog/jfrog-cli
 
+Documentation: https://docs.jfrog-applications.jfrog.io/jfrog-applications/jfrog-cli
+
 Current build status
 ====================
 
