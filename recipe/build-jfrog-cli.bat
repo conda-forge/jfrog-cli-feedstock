@@ -1,7 +1,7 @@
 @echo on
 
 go build ^
-    -ldflags "-X main.revision=conda-forge" ^
+    -ldflags "-X main.revision=%PKG_VERSION%" ^
     -v ^
     -o "%LIBRARY_PREFIX%\bin\jf.exe" ^
     || exit 2

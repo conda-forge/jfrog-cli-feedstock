@@ -2,7 +2,7 @@
 set -eux
 
 go build \
-    -ldflags "-X main.revision=conda-forge" \
+    -ldflags "-X main.revision=${PKG_VERSION}" \
     -v \
     -o "${PREFIX}/bin/jf" \
     || exit 2
