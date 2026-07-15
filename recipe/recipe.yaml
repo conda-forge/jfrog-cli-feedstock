@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "2.113.0"
+  version: "2.115.0"
 
 package:
   name: jfrog-cli
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/jfrog/jfrog-cli/archive/v${{ version }}.tar.gz
-  sha256: 05dcf32f56f4541338fd94722e88ec5017b9163e7cd207112c715bcdf60ad644
+  sha256: b2c9a4e4712b00dee30f35e0945c0460b0529ab0543d76a245da30da0be528c4
 
 build:
   number: 0
