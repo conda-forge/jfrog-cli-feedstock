@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "2.127.0"
+  version: "2.128.0"
 
 package:
   name: jfrog-cli
@@ -10,10 +10,13 @@ package:
 
 source:
   url: https://github.com/jfrog/jfrog-cli/archive/v${{ version }}.tar.gz
-  sha256: 7f04e866303c714552a05f315bbeeb59692a36f2b6220ed2845b90aa2655834a
+  sha256: 57bdf75dc610179d8f60160afaf486b92162aeb85bb7fcc52e68aed8be1e0bf3
 
 build:
   number: 0
+  skip:
+    # segfaults with `jf --version`
+    - target_platform == "linux-ppc64le"
   dynamic_linking:
     binary_relocation: false
   script:
