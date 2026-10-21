@@ -14,6 +14,9 @@ source:
 
 build:
   number: 0
+  skip:
+    # segfaults with `jf --version`
+    - target_platform == "linux-ppc64le"
   dynamic_linking:
     binary_relocation: false
   script:
